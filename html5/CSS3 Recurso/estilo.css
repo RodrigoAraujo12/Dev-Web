@@ -1,0 +1,51 @@
+/***** border radius e box sizing
+#caixa{
+	width: 300px;
+	height: 300px;
+	background:#b9c941;
+	padding: 60px;
+	box-sizing: border-box;
+}
+******* degrades *****
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: radial-gradient(red,green);
+}
+#caixa h1{
+	background:rgba(255, 255, 255, 0.5);
+
+}
+******* Sombra *****
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: #009670;
+	padding: 8px;
+	margin: 20px;
+}
+#caixa h1{
+	color:white;
+	text-shadow: 20px 20px 3px rgba(0, 0, 0, 0.6);
+}*/
+@keyframes animacao-caixa{
+	from{
+		border-radius: 0px;
+		background: purple;
+		top: 0;
+		left: 0;
+	}
+	to{
+		border-radius: 150px;
+		background: skyblue;
+		top: 200px;
+		left: 200px;
+	}
+} 
+#caixa{
+	width: 300px;
+	height: 300px;
+	background: purple;
+	position: relative;
+	animation: animacao-caixa 5s 2s 2 alternate;
+}

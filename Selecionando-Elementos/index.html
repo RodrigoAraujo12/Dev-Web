@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecionando elementos</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+	<form name="cadastro">
+		<input type="text" name="nome">
+		<input type="text" name="email">
+		<select name="sexo">
+			<option value="masculino">Masculino</option>
+			<option value="feminino">Feminino</option>
+		</select>
+	</form>
+	<button onclick="PreencherAuto()">Clica ai Boy</button>
+
+	<script type="text/javascript">
+		/*const obj=document.getElementsByName('cadastro')
+		console.log(obj)
+		console.log(document.forms[0])
+		console.log(document.cadastro)
+		document.cadastro.nome.value='Rodrigo'
+		document.cadastro.sexo.value='masculino'*/
+		function PreencherAuto() {
+			document.cadastro.nome.value='Rodrigo'
+			document.cadastro.email.value='rodrigoaraujo_12@hotmail.com'
+			document.cadastro.sexo.value='masculino'
+		}
+
+	</script>
+	
+</body>
+</html>
+
+
+<!--Selecionando Multiplos Elementos
+<div id="destaque">Área de conteúdo</div>
+	<h1 class="vermelho">Título do site</h1>
+	<p>Subtitulo</p>
+	<div>Área de conteúdo 2</div>
+	<h1 class="vermelho">Título do site 2</h1>
+
+	<ul>
+		<li class="primeiro">Item 1</li>
+		<li>Item 2</li>
+	</ul>
+
+	<ul>
+		<li class="primeiro">Item 1 alterado</li>
+		<li>Item 2 alterado</li>
+	</ul>
+
+	<input type="text" name="nome">
+	<input type="text" name="sobrenome">
+
+	<button onclick="executar()">Clique aqui</button>
+
+	<script type="text/javascript">
+
+		function executar() {
+			const obj = document.querySelector('li.primeiro')
+			obj.innerHTML = "teste"
+			obj.classList.add("destaque")
+		}
+
+		//const obj = document.getElementById('destaque')
+		//const obj = document.querySelector('li.primeiro')
+		//console.log(obj.textContent)
+
+		//const colecao = document.getElementsByTagName('li')
+		//const obj = document.getElementsByClassName('vermelho')
+		//const obj = document.getElementsByName('nome')
+		const obj = document.querySelectorAll('li.primeiro')
+
+		/*for(let i=0; i < obj.length; i++){
+			console.log(obj[i].textContent)
+		}
+		const lista = Array.from(colecao)
+		const funcao = function(item,i){
+			console.log(item.textContent)
+		}
+		lista.forEach(funcao)*/
+		console.log(obj.item(1).textContent)
+
+	</script>
+Fim Selecionando Multiplos Elementos-->

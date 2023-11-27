@@ -1,0 +1,7 @@
+*{
+	border: 1px solid darkred;
+}
+li>a {
+	color: red;
+	text-decoration: none;
+}

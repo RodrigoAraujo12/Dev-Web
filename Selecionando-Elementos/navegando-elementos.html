@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Selecionando elementos</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body>
+
+	<div>Irmao antetior</div>
+	<div id="pai">
+		<div id="itens">
+			<p>primeiro</p>
+			<p>segundo</p>
+			<p>terceiro</p>
+			<p>quarto</p>
+		</div>
+	</div>
+	<div>Proximo irmao</div>
+
+	<script type="text/javascript">
+		const lista =document.querySelector('div#itens')
+		//console.log(lista.parentNode)
+		console.log(lista.firstElementChild)
+	</script>
+	
+</body>
+</html>
+
+
